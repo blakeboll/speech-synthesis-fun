@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             option.setAttribute('data-name', voices[i].name);
             document.getElementById('voices').appendChild(option);
         }
-    },10)
+    }, 200);
 
     const readIt = it => {
         if (reader.speaking || reader.pending || reader.paused) {
